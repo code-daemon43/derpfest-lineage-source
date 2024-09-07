@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/guacamole/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_guacamole
+PRODUCT_NAME := derp_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := GM1911
@@ -23,6 +23,10 @@ PRODUCT_BRAND := OnePlus
 
 PRODUCT_SYSTEM_NAME := OnePlus7Pro
 PRODUCT_SYSTEM_DEVICE := OnePlus7Pro
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 3120
+TARGET_SCREEN_WIDTH := 1440
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
